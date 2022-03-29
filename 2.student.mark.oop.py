@@ -1,3 +1,4 @@
+true = 1
 class student:
     def __init__(self,id,name,dob):
         self._id = id
@@ -63,12 +64,12 @@ def courseInfoInput(course_order):
 def marking_process():
     print("Marking:")
     for i in courses:
-        while i:
+        while 1:
             course_ID = input("Enter course id: ")
             crsID_list = [crs_Id.get_id() for crs_Id in courses]
             if course_ID in crsID_list:
                 for j in students:
-                    while j:
+                    while 1:
                         stdID = input("Enter student id: ")
                         stdIDList = [std_Id.get_id() for std_Id in students]
                         if stdID in stdIDList:
